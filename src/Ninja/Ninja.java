@@ -1,6 +1,6 @@
 package Ninja;
 
-public class Ninja {
+public abstract class Ninja {
 	
 	private String name;
 	private int idade;

@@ -1,13 +1,26 @@
 package Main;
 
-import Ninja.Ninja;
+import Ninja.Hatake;
 
 public class Main {
 
 	public static void main(String[] args) {
 		
-		Ninja ninja = new Ninja("Pedro", 21, "folha", "Chunin");
-		System.out.println(ninja);
+		Hatake kakashi = new Hatake("Kakashi", 30, "Folha", "Kage");
+		System.out.println(kakashi);
+		
+		//Every class derivated from Ninja can
+		kakashi.ataqueLeve();
+		kakashi.ataquePesado();
+		System.out.println("----------------------");
+		//Only Hatake class can
+		kakashi.usarChidori();
+		System.out.println("----------------------");
+		//Only classes that has the "Contract" to sharingan
+		kakashi.sharingan();
+		
+		
+		
 
 	}
 
